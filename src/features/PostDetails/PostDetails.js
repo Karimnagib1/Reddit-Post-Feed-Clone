@@ -1,7 +1,7 @@
 import React from 'react';
 import 'PostDetails.css';
 
-const componentName = () => {
+const PostDetails = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const componentName = () => {
     );
 };
 
-export default componentName;
+export default PostDetails;

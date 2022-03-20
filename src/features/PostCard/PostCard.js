@@ -1,7 +1,7 @@
 import React from 'react';
 import 'PostCard.css';
 
-const componentName = () => {
+const PostCard = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const componentName = () => {
     );
 };
 
-export default componentName;
+export default PostCard;

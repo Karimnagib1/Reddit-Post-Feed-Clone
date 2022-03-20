@@ -2,7 +2,7 @@ import React from 'react';
 import './PostsList.css';
 
 
-const componentName = () => {
+const PostsList = () => {
     return (
         <div>
             
@@ -10,4 +10,4 @@ const componentName = () => {
     );
 };
 
-export default componentName;
+export default PostsList;
