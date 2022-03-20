@@ -1,4 +1,5 @@
 import React from 'react';
+import 'PostCard.css';
 
 const componentName = () => {
     return (
