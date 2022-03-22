@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './Header.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 //making the header of the site with a react function
 const Header = () => {
     //initiating a state to hold the search term
@@ -22,7 +24,7 @@ const Header = () => {
             <div className= 'logo'> Reddit Client</div>
             <form onSubmit= {handleSubmit}>
                 <input type= 'text' value = {term} placeholder = 'search posts' onChange = {handleChange}></input>
-                <button type = 'submit'><FontAwesomeIcon icon="fa-solid fa-magnifying-glass-arrow-right" /></button>
+                <button type = 'submit'><FontAwesomeIcon icon={faSearch} /></button>
             </form>
             <button onClick = {handleClick}>Popular</button>
         </header>
