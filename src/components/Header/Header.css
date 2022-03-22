@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40px;
+    height: 50px;
     padding: 10px;
     box-sizing: border-box;
     color: #9cf7ff;
@@ -15,4 +15,28 @@ header {
 .logo {
     font-family: 'Pacifico', cursive;
     font-size: 1.5em;
+}
+
+.search {
+    border: 2px solid #9966ff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    padding: 3px;
+    margin: 2px;
+
+}
+button {
+    font-size: 1.1rem;
+    border: 2px solid #9966ff;
+    border-radius: 5px;
+    color: #001b75;
+    padding: 3px 6px;
+    background-color: #9966ff;
+}
+.popular {
+    background-image: linear-gradient(to top,  #ff9933,  #ffcf33);
+}
+form {
+
 }

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Header.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faFire} from '@fortawesome/free-solid-svg-icons';
 
 //making the header of the site with a react function
 const Header = () => {
@@ -23,10 +23,10 @@ const Header = () => {
         <header>
             <div className= 'logo'> Reddit Client</div>
             <form onSubmit= {handleSubmit}>
-                <input type= 'text' value = {term} placeholder = 'search posts' onChange = {handleChange}></input>
+                <input type= 'text' className = "search" value = {term} placeholder = 'search posts' onChange = {handleChange}></input>
                 <button type = 'submit'><FontAwesomeIcon icon={faSearch} /></button>
             </form>
-            <button onClick = {handleClick}>Popular</button>
+            <button  className = "popular" onClick = {handleClick}>popular <FontAwesomeIcon icon={faFire} /></button>
         </header>
     );
 };
