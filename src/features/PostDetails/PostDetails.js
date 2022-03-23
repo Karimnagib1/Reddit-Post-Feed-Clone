@@ -1,5 +1,5 @@
 import React from 'react';
-import 'PostDetails.css';
+import './PostDetails.css';
 
 const PostDetails = () => {
     return (
