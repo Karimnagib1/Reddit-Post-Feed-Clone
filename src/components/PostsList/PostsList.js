@@ -4,7 +4,7 @@ import './PostsList.css';
 
 const PostsList = () => {
     return (
-        <div classname = "post-list">
+        <div className = "posts-list">
             Posts List lashjdfbflksahfkslhf
             
         </div>

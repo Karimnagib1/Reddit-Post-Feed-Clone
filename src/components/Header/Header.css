@@ -6,8 +6,8 @@ header {
     height: 50px;
     padding: 10px;
     box-sizing: border-box;
-    color: #9cf7ff;
-    background-color: #001b75;
+    color: #C69B7B;
+    background-color: #3A3845;
 
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 .search {
-    border: 2px solid #9966ff;
+    border: 2px solid #F7CCAC;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 1.1rem;
@@ -28,11 +28,11 @@ header {
 }
 button {
     font-size: 1.1rem;
-    border: 2px solid #9966ff;
+    border: 2px solid #F7CCAC;
     border-radius: 5px;
-    color: #001b75;
+    color: #3A3845;
     padding: 3px 6px;
-    background-color: #9966ff;
+    background-color: #F7CCAC;
 }
 .popular {
     background-image: linear-gradient(to top,  #ff9933,  #ffcf33);

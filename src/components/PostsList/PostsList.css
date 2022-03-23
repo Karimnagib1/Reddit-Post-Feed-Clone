@@ -1,0 +1,8 @@
+.posts-list {
+    display: block;
+    margin: auto;
+    max-width:900px;
+    color: red;
+    padding: 7px;
+    background-color: #9966ff;
+}
