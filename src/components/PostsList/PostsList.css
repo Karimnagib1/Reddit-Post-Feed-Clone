@@ -1,8 +1,10 @@
 .posts-list {
     display: block;
     margin: auto;
-    max-width:900px;
-    color: red;
+    max-width: 900px;
     padding: 7px;
-    background-color: #9966ff;
+    color: #3A3845;
+    background-color: #F7CCAC;
+    display: flex;
+    justify-content: space-evenly;
 }
