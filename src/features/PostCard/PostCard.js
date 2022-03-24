@@ -1,5 +1,5 @@
 import React from 'react';
-import 'PostCard.css';
+import './PostCard.css';
 
 const PostCard = (props) => {
     return (

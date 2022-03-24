@@ -12,8 +12,6 @@ const getData = async  () =>{
 }
 getData();
 ReactDOM.render(
-
-
     <Provider store = {store}>
         <App /> 
     </Provider>

@@ -2,9 +2,12 @@ import React, {useState} from 'react';
 import './Header.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faSearch, faFire} from '@fortawesome/free-solid-svg-icons';
+import { getPopularPosts, getPosts } from '../../features/PostCard/PostsSlice';
+import { useDispatch } from 'react-redux';
 
 //making the header of the site with a react function
 const Header = () => {
+    const dispatch = useDispatch();
     //initiating a state to hold the search term
     const [term, setTerm] = useState("");
     //a function to handle term change
@@ -13,11 +16,14 @@ const Header = () => {
     };
     // a function to handle the submission of a term
     const handleSubmit = () => {
-        //write some code here
+        let fTerm = term.split(' ');
+        fTerm.join('%');
+        setTerm("");
+        dispatch(getPosts(fTerm));
     };
     // a function to handle a click on popular button
     const handleClick = () => {
-        //write the handling code here
+        dispatch(getPopularPosts());
     }
     return (
         <header>
