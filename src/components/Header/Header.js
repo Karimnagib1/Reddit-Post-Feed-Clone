@@ -15,11 +15,13 @@ const Header = () => {
         setTerm(e.target.value);
     };
     // a function to handle the submission of a term
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         let fTerm = term.split(' ');
         fTerm.join('%');
         setTerm("");
         dispatch(getPosts(fTerm));
+        console.log(fTerm);
     };
     // a function to handle a click on popular button
     const handleClick = () => {

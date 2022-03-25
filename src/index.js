@@ -6,11 +6,11 @@ import App from './app/App';
 import {Provider} from 'react-redux';
 import {store} from './app/store.js';
 
-const getData = async  () =>{ 
-  const x = await fetch("https://www.reddit.com/r/popular.json").then(response => response.json());
-  console.log(x);
-}
-getData();
+// const getData = async  () =>{ 
+//   const x = await fetch("https://www.reddit.com/r/popular.json").then(response => response.json());
+//   console.log(x);
+// }
+// getData();
 ReactDOM.render(
     <Provider store = {store}>
         <App /> 

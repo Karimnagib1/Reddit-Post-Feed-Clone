@@ -12,7 +12,7 @@ export const getPopularPosts = createAsyncThunk(
 export const getPosts = createAsyncThunk(
     'posts/getPosts', 
     async (term) => {
-        const response = await fetch("https://www.reddit.com/search.json?q={term}}").then(response => response.json());
+        const response = await fetch(`https://www.reddit.com/search.json?q=${term}`).then(response => response.json());
         return response;
     }
 );

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import PostCard from '../../features/PostCard/PostCard';
-import { getPopularPosts, selectStatus, selectPosts } from '../../features/PostCard/PostsSlice';
+import PostCard from '../../components/PostCard/PostCard';
+import { getPopularPosts, selectStatus, selectPosts } from './PostsSlice';
 
 import './PostsList.css';
 
