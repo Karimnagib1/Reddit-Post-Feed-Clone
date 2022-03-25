@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Header.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faSearch, faFire} from '@fortawesome/free-solid-svg-icons';
-import { getPopularPosts, getPosts } from '../../features/PostCard/PostsSlice';
+import { getPopularPosts, getPosts } from '../../features/PostsList/PostsSlice';
 import { useDispatch } from 'react-redux';
 
 //making the header of the site with a react function
