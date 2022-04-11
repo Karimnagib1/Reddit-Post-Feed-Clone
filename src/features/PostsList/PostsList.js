@@ -20,8 +20,8 @@ const PostsList = () => {
     return (
         <div className = "posts-list">
             {status === 'pending' ? (<div className= 'laoding'>Loading...</div>): []}
-            {status === 'rejected'?(<div className= 'rejected'>Rejected...</div>): [] }
-            {status === 'fulfilled'? posts.map(post => (<p> {post.title}</p>)):[]}
+            {status === 'rejected'?(<div className= 'rejected'>Rejected...</div>): []}
+            {status === 'fulfilled'? posts.map((post, i) => (<PostCard post = {post} key = {i}/>)):[]}
             
         </div>
     );

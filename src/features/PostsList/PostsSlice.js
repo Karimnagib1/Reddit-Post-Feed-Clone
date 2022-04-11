@@ -33,6 +33,7 @@ const posts = createSlice({
                 ups: post.ups,
                 downs: post.downs,
                 thumbnail: post.thumbnail,
+                url: post.url,
                 
             }
         }
@@ -52,6 +53,7 @@ const posts = createSlice({
                     ups: post.ups,
                     downs: post.downs,
                     thumbnail: post.thumbnail,
+                    url: post.url_overridden_by_dest,
                 };
                 state.status = 'fulfilled';
             }
@@ -76,6 +78,7 @@ const posts = createSlice({
                     ups: post.ups,
                     downs: post.downs,
                     thumbnail: post.thumbnail,
+                    url: post.url_overridden_by_dest,
                 };
                 state.status = 'fulfilled';
             }
