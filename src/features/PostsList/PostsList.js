@@ -14,7 +14,7 @@ const PostsList = () => {
     const dispatch = useDispatch();
     useEffect( () => {
         dispatch(getPopularPosts());
-    },[]);
+    },[dispatch]);
     console.log(posts);
     
     return (

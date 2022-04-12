@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import './Header.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faSearch, faFire} from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faFire, } from '@fortawesome/free-solid-svg-icons';
+import { faRedditAlien } from "@fortawesome/free-brands-svg-icons"
 import { getPopularPosts, getPosts } from '../../features/PostsList/PostsSlice';
 import { useDispatch } from 'react-redux';
 
@@ -29,7 +30,7 @@ const Header = () => {
     }
     return (
         <header>
-            <div className= 'logo'> Reddit Client</div>
+            <div className= 'logo'> <FontAwesomeIcon icon={faRedditAlien} /> Reddit Client</div>
             <form onSubmit= {handleSubmit}>
                 <input type= 'text' className = "search" value = {term} placeholder = 'search posts' onChange = {handleChange}></input>
                 <button type = 'submit'><FontAwesomeIcon icon={faSearch} /></button>
