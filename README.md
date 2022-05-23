@@ -17,3 +17,5 @@ Open your terminal and navigate to the main folder of the project then run the f
 
 
 ``` npm start   ```
+## Project Preview
+you can preview the project [here](https://redditpostfeedclone.netlify.app/).
